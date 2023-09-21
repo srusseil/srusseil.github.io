@@ -6,11 +6,11 @@ xmlns:foaf="http://xmlns.com/foaf/0.1/"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
 
-<xsl:template match="foaf:Person" >
+<xsl:template match="/" >
 		<ul>
 			<li>
-			<xsl:value-of select="foaf:name"/>
-			<xsl:value-of select="foaf:homepage"/>
+			<xsl:value-of select="rdf:RDF/foaf:Person/foaf:name"/>
+			<xsl:value-of select="rdf:RDF/foaf:Person/foaf:homepage"/>
 			</li>
 		</ul>
 
