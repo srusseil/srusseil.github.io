@@ -10,7 +10,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <html>
 <body>
 		<h1>Page de <xsl:value-of select="rdf:RDF/foaf:Person/foaf:name"/></h1>
-		<p>Lien de la homepage : <xsl:value-of select="rdf:RDF/foaf:Person/foaf:homepage/@rdf:resource"/></p>
+		<p>Lien de la homepage : <a href="{rdf:RDF/foaf:Person/foaf:homepage/@rdf:resource}"> <xsl:value-of select="rdf:RDF/foaf:Person/foaf:homepage/@rdf:resource"/></a></p>
         </body>
 </html>
 
