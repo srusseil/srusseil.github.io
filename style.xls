@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<xsl:stylesheet
+xmlns:xsl="http://www.w3.org/TR/WD-xsl"
+xmlns="http://www.w3.org/TR/REC-html40"
+result-ns="">
+
+
+<xsl:template match="foaf:Person" >
+		<ul>
+			<li>
+			<xsl:value-of select="foaf:name"/>
+			<xsl:value-of select="foaf:homepage"/>
+			</li>
+		</ul>
+
+	</xsl:template >
+
+</xsl:stylesheet>
