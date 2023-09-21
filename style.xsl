@@ -9,12 +9,8 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <xsl:template match="/" >
 <html>
 <body>
-		<ul>
-			<li>
-			<xsl:value-of select="rdf:RDF/foaf:Person/foaf:name"/>
-			<xsl:value-of select="rdf:RDF/foaf:Person/foaf:homepage"/>
-			</li>
-		</ul>
+		<h1>Page de <xsl:value-of select="rdf:RDF/foaf:Person/foaf:name"/></h1>
+		<p>Lien de la homepage : <xsl:value-of select="rdf:RDF/foaf:Person/foaf:homepage/@rdf:resource"/></p>
         </body>
 </html>
 
